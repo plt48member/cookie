@@ -1,1 +1,1 @@
-cookie clicker
+max clicker
