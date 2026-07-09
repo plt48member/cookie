@@ -102,4 +102,8 @@ background-color: #6f4518;
     background-color: #6f4518;
 }
 
-
+#buy-baker {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
