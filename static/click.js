@@ -7,14 +7,19 @@ const clickerLabel = document.getElementById("clickers")
 const grandmaLabel = document.getElementById("grandmas")
 const grandmaBtn = document.getElementById("buy-grandma")
 
+const bakerLabel = document.getElementById("bakers")
+const bakerBtn = document.getElementById("buy-baker")
+
 let cookies = 0
 let clickers = 1
 let grandmas = 0
+let baker = 0
 
 function updateLabels() {
-    cookieLabel.innerHTML = "Cookies:" +cookies
+    cookieLabel.innerHTML = "Cookies:" + cookies
     clickerLabel.innerHTML = "clickers:" + clickers
     grandmaLabel.innerHTML = "grandmas:" +  grandmas
+    bakerLabel.innerHTML = "bakers:" + bakers
 }
 
 updateLabels()
@@ -57,27 +62,14 @@ setInterval(function () {
 
 
 
-let grandmaPrice = 50;
-
-grandmaBtn.onclick = function () {
-    if (cookies >= grandmaPrice) {
-        cookies -= grandmaPrice;
-        grandmas++;
-
-        grandmaPrice = Math.floor(grandmaPrice * 1.15);
-
-        updateLabels();
-    }
+bakerBtn.onclick = function (){
+    if(cookies >= 100)
+        cookies = cookies - 100
+    bakers++;
+    updateLabels()
 }
 
-
-clickerBtn.onclick = function () {
-    if (cookies >= clickerPrice) {
-        cookies -= clickerPrice;
-        clickers++;
-
-        clickerPrice = Math.floor(clickerPrice * 1.15);
-
-        updateLabels();
-    }
-}
+setInterval(function () {
+    cookies = cookies + bakers
+    updateLabels()
+}, 1000);

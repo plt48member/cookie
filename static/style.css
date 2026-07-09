@@ -102,4 +102,29 @@ background-color: #6f4518;
     background-color: #6f4518;
 }
 
+#buy-baker {
+    background: linear-gradient(to bottom, #d8a15d, #b8752d);
+    color: white;
+    border: 3px solid #7a4b16;
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 6px 0 #7a4b16;
+    width: 220px;
+    margin: 10px auto;
+    display: block;
+}
 
+#buy-baker:hover {
+    background: linear-gradient(to bottom, #e6b87a, #c98b46);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 0 #7a4b16;
+}
+
+#buy-baker:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #7a4b16;
+}
