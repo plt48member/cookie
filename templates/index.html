@@ -1,64 +1,75 @@
-<html>
-     <link rel="stylesheet" href="/static/style.css">
-    <head>
-        <title>cookie clicker</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-        <header>click the cookie to earn!</header>
-        
-        <main>
-            <section>
-                <h2 id="cookies">Cookies:</h2>
-                <h2 id="clickers">Clickers:</h2>
-                <h2 id="grandmas">Grandmas:</h2>
-                <h2 id="bakers">Bakers:</h2>
-                
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header>
+        Click the Cookie to Earn!
+    </header>
+
+    <main>
+
+        <!-- Stats -->
+        <section id="stats">
+            <h2 id="cookies">Cookies: 0</h2>
+            <h3 id="cps">Cookies Per Second: 0</h3>
+            <h2 id="clickers">Clickers: 1</h2>
+            <h2 id="grandmas">Grandmas: 0</h2>
+            <h2 id="bakers">Bakers: 0</h2>
+            <h2 id="maxs">Maxs:0</h2>
         </section>
 
+        <!-- Cookie -->
         <section id="cookie-area">
-                <button id="cookie">🍪</button>
+            <button id="cookie">🍪</button>
         </section>
 
+        <!-- Shop -->
         <section id="shop">
-            <h2>Shop</h2>
 
-            <div class="upgrades">
-                <h3>clicker</h3>
-                <p>+1 cookie per click</p>
-                <p>Cost: 10 Cookies</p>
+            <h2>🛒 Shop</h2>
+
+            <div class="upgrade">
+                <h3>🖱️ Clicker</h3>
+                <p>+1 Cookie Per Click</p>
+                <p>Price: <span id="clickerPrice">10</span></p>
                 <button id="buy-cursor">Buy</button>
             </div>
 
             <div class="upgrade">
-                <h3>Grandma</h3>
+                <h3>👵 Grandma</h3>
                 <p>+1 Cookie Every Second</p>
-                <p>Cost: 50 Cookies</p>
+                <p>Price: <span id="grandmaPrice">50</span></p>
                 <button id="buy-grandma">Buy</button>
             </div>
-            
-            <div class="bakerUpgrade">
-                <h3>Baker</h3>
+
+            <div class="upgrade">
+                <h3>👨‍🍳 Baker</h3>
                 <p>+3 Cookies Every Second</p>
-                <p>Cost: 100 Cookies</p>
-                <button id="buy-baker"></button>
-
-
-
+                <p>Price: <span id="bakerPrice">100</span></p>
+                <button id="buy-baker">Buy</button>
             </div>
-             
+
+            <div class="upgrade">
+                <h3>Max's machine</h3>
+                <p>+10 Cookies Every Second</p>
+                <p>Price:<span id="maxsPrice">500</span></p>
+                <button id="buy-maxs">Buy</button>
+            </div>
 
         </section>
-            
-        
-        
 
     </main>
 
-    
     <script src="/static/click.js"></script>
+
 </body>
 
 </html>
-
-            
